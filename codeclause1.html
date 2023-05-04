@@ -1,0 +1,98 @@
+<html>
+    
+    <head>
+        <title>Unit Converter</title>
+        <style>
+            body{
+                border: 0px;
+                padding: 0px;
+                margin: 0px;
+            }
+            .header{
+                padding: 3px;
+                text-align: center;
+                background-color: darkgreen;
+            }
+            .header h1{
+                font-size: 35px;
+                font-family: 'Times New Roman', Times, serif;
+                color: white
+            }
+            h2{
+                font-size: 25px;
+                font-family: 'Times New Roman', Times, serif;
+                color: green;
+                text-align: left;
+                margin-left: 80px;
+            }
+            div.box , div.wrapper{
+    display: flex;
+    margin: 10px;
+    margin-left: 80px;
+}
+
+input[type="number"] {
+    padding: 5px;
+    width: 100px;
+}
+
+select {
+    padding: 5px;
+    width: 150px;
+    margin-left: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    margin-left: 80px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3E8E41;
+}
+label {
+  display: inline-block;
+  width: 100px;
+}
+input, select {
+  margin: 5px;
+}
+            
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Unit Converter </h1>
+            </div>
+        <h2>Unit Converter Express Version</h2>
+        <div class="box">
+            <input type="number" id="inputValue">
+            <select id="inputUnit">
+                <option value="cm">Centimeters</option>
+                <option value="in">Inches</option>
+                <option value="m">Meters</option>
+                <option value="ft">Feet</option>
+            </select>
+        </div>
+        <div class="wrapper">
+            <input type="number" id="outputValue" disabled>
+            <select id="outputUnit">
+                <option value="cm">Centimeters</option>
+                <option value="in">Inches</option>
+                <option value="m">Meters</option>
+                <option value="ft">Feet</option>
+            </select>
+        </div>
+        
+       
+        <button id="convertButton">Convert</button>
+      
+        <script src="script.js"></script>
+    </body>
+</html>
